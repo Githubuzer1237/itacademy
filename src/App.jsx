@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
-import "./App.css";
-import Header from "./components/Header/Header";
-import Home from "./pages/Home";
-import NotFoundPage from "./pages/NotFoundPage";
-import StudioPage from "./pages/StudioPage";
-import Loader from "./components/Loader/Loader";
-import Footer from "./components/Footer/Footer";
+import React, { useState, useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+import './App.css';
+import Header from './components/Header/Header';
+import Home from './pages/Home';
+import NotFoundPage from './pages/NotFoundPage';
+import StudioPage from './pages/StudioPage';
+import Loader from './components/Loader/Loader';
+import Footer from './components/Footer/Footer';
+import Courses from './pages/Courses';
 
 const App = () => {
   const location = useLocation();
@@ -35,28 +36,13 @@ const App = () => {
           >
             <Header />
             <Routes location={location} key={location.pathname}>
-              <Route
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/studio"
-                element={<StudioPage />}
-              />
-              <Route
-                path="*"
-                element={<NotFoundPage />}
-              />
-
-
-
+              <Route path="/" element={<Home />} />
+              <Route path="/studio" element={<StudioPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+              <Route path="/courses" element={<Courses />} />
             </Routes>
             <Footer />
-         
-
           </motion.div>
-   
-
         )}
       </AnimatePresence>
     </>

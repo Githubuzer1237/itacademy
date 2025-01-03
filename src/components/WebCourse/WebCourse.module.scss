@@ -44,7 +44,7 @@ $colorLight: #f3f2f9;
 }
 
 .hero {
-    height: 100dvh;
+    height: 120dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,12 +62,16 @@ $colorLight: #f3f2f9;
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-direction: column;
 
     @media (max-width: 480px) {
       flex-direction: column;
       gap: 10px;
     }
-
+   b {
+    color: $colorLight;
+    text-decoration: underline;
+   }
     a {
         font-weight: 500;
         // text-transform: lowercase;

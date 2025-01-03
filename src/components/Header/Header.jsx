@@ -6,7 +6,10 @@ const Header = () => {
    const [active, setActive] = useState(false)
 
    const toggleBurger = () => {
-    setActive(!active)
+    setActive(!active);
+   }
+   const closeBurger = () => {
+    setActive(false);
    }
 
   return (
@@ -16,17 +19,17 @@ const Header = () => {
          
       <Link to={'/'} ><img src="/itacademylogo.svg" alt="" className={s.logo} /></Link>
 
-      <div className={`${s.links} ${active ? 'active' : ''  }  `}>
-       <Link to={'/'}>smds</Link>
-       <Link to={'/'}>smds</Link>
-       <Link to={'/studio'}>studio</Link>
-       <Link to={'/'}>Курсы</Link>
+      <div className={`${s.links} ${active ? s.active : ''  }  `}>
+       <Link onClick={closeBurger} to={'/'}>главная</Link>
+       <Link onClick={closeBurger} to={'/'}>потом придумаем</Link>
+       <Link onClick={closeBurger} to={'/studio'}>студия</Link>
+       <Link onClick={closeBurger} to={'/courses'}>Курсы</Link>
 
       </div>
 
-      <Link>Admin</Link>
+     
          
-     <div onClick={toggleBurger} className={`${s.burger} ${active ? 'active' : ''  }  `}>
+     <div onClick={toggleBurger} className={`${s.burger} ${active ? s.active : ''  }  `}>
       <span></span>
       <span></span>
      </div>

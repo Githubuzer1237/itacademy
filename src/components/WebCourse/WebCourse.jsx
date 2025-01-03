@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Background3D from '../Background3D/Background3D'
 import AnimatedSpan from '../AnimatedSpan/AnimatedSpan'
 
-const WebCourse = () => {
+const WebCourse = ( {price} ) => {
   return (
     <>
       <section id='courses' className={s.hero}>
@@ -17,6 +17,7 @@ const WebCourse = () => {
             <p>  Изучите самые актуальные технологии веб-разработки и станьте мастером своего дела.</p>
 
             <div className={s.inner}>
+              <b>{price} </b>
               <Link to="/">→ Курс мечты</Link>
             </div>
           </div>

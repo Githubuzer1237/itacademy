@@ -10,10 +10,10 @@ const Home = () => {
   <>
   <Hero />
   <Windows />
-  <WebCourse />
-  <Grafic />
+  <WebCourse price="→1.400.000сум"   />
+  <Grafic price="→1.200.000сум" />
 
-  <ScratchSection />
+  <ScratchSection price="→1.100.000сум" />
   <Partners />
   </>
   )

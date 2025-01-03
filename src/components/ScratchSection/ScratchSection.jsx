@@ -124,7 +124,7 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import styles from './ScratchSection.module.scss';
 
-const ScratchSection = () => {
+const ScratchSection = ({price} ) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
 
@@ -154,10 +154,18 @@ const ScratchSection = () => {
         >
           Курс Scratch: Твое путешествие в программирование!
         </motion.h1>
+        <motion.b className={styles.price}
+        initial={{ opacity: 0, y: -50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ delay: 3.3, duration: 0.5 }}
+        >
+          {price} 
+          </motion.b>
+        <br />
         <motion.a
           href="#"
           initial={{ opacity: 0, y: -50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 30 } : {} }
           transition={{ delay: 3.3, duration: 0.5 }}
           className={styles.courseLink}
         >
