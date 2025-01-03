@@ -17,7 +17,7 @@ const Wrapper = ( {title, maintitle, text, link, linkspan } ) => {
           <p>{text}</p>
 
          <div className={s.linktext}>
-         <p>Нажмите чтобы совершить экскурсию по нашей   <span><Link to={link}>{linkspan}</Link></span></p>
+         <p>Нажмите чтобы совершить экскурсию по нашей   <span><Link target='blank' to={link}>{linkspan}</Link></span></p>
          </div>
 
          </div>

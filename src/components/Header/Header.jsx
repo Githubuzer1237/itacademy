@@ -14,7 +14,7 @@ const Header = () => {
   <header className={s.header}>
       <nav className={s.nav}>
          
-      <img src="/itacademylogo.svg" alt="" className={s.logo} />
+      <Link to={'/'} ><img src="/itacademylogo.svg" alt="" className={s.logo} /></Link>
 
       <div className={`${s.links} ${active ? 'active' : ''  }  `}>
        <Link to={'/'}>smds</Link>
