@@ -110,7 +110,7 @@ const Footer = () => {
   return (
     <div id='connect_sect' className={s.footer}>
       <div className="container">
-        <div className={s.wrapper}>
+        <div id='zapis' className={s.wrapper}>
           <img className={s.svg} src="/round_text.svg" alt="" />
           <form onSubmit={handleJoin}>
             <div className={s.form}>

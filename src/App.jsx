@@ -10,6 +10,7 @@ import Loader from './components/Loader/Loader';
 import Footer from './components/Footer/Footer';
 import Courses from './pages/Courses';
 import AdminPanel from './pages/AdminPanel';
+import FreeLessonPage from './pages/FreeLessonPage';
 
 const App = () => {
   const location = useLocation();
@@ -42,7 +43,8 @@ const App = () => {
               <Route path="*" element={<NotFoundPage />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/admin-panel" element={<AdminPanel />} />
-
+              <Route path="/freelesson" element={<FreeLessonPage />} />
+                                                               
             </Routes>
             <Footer />
           </motion.div>

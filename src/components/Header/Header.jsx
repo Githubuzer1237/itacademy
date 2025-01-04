@@ -48,7 +48,7 @@ import s from './Header.module.scss';
 
 const Header = () => {
   const [active, setActive] = useState(false);
-  const [showAdminLink, setShowAdminLink] = useState(false); // Состояние для отображения ссылки на админку
+  const [showAdminLink, setShowAdminLink] = useState(false); 
 
   const toggleBurger = () => {
     setActive(!active);
@@ -60,8 +60,8 @@ const Header = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.ctrlKey && e.shiftKey && e.key === 'C') {
-        setShowAdminLink(true); // Отображаем ссылку на админку при нажатии Ctrl+Shift+A
+      if (e.ctrlKey && e.shiftKey && e.key === 'B') {
+        setShowAdminLink(true); 
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -79,8 +79,8 @@ const Header = () => {
           <Link onClick={closeBurger} to={'/'}>
             главная
           </Link>
-          <Link onClick={closeBurger} to={'/'}>
-            потом придумаем
+          <Link onClick={closeBurger} to={'/freelesson'}>
+            Бесплатный урок
           </Link>
           <Link onClick={closeBurger} to={'/studio'}>
             студия
