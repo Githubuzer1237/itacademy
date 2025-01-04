@@ -1,12 +1,13 @@
 import React from 'react'
 import s from './Windows.module.scss';
 import Window from '../Window/Window';
-import { motion } from 'framer-motion';
+
 
 const Windows = () => {
   return (
     <>
       <div className="container">
+        <div className="line"></div>
       <div className={s.windows}>
 
   <Window positionx={700} positiony={400}  special="Azim Makhmov" windowtext="Учителя в айти академии самые лучшие!" h1="error 404" />

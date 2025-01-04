@@ -16,34 +16,7 @@
   margin: 0 auto;
 }
 
-.playful_btn {
-  position: relative;
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 10px;
-  font: 500 40.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: bold;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 10px;
-  box-shadow: 10px 14px 0px black;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
 
-  @media (max-width: 900px) {
-    display: none;
-  }
-}
-
-.playful_btn:hover {
-  transform: translateY(2px);
-}
-
-.playful_btn:active {
-  transform: translateY(8px);
-  box-shadow: none;
-}
 
 .text {
 max-width: 800px;
@@ -207,4 +180,95 @@ p {
     opacity: 0;
     // transform: scale(0) translate(100px, 100px);
   }
+}
+
+
+
+
+
+
+
+
+
+
+// .playful_btn {
+//   position: relative;
+//   display: inline-block;
+//   padding: 5px 10px;
+//   margin: 10px;
+//   font: 500 40.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//   font-weight: bold;
+//   color: black;
+//   background-color: white;
+//   border: 2px solid black;
+//   border-radius: 10px;
+//   box-shadow: 10px 14px 0px black;
+//   cursor: pointer;
+//   transition: transform 0.2s, box-shadow 0.2s;
+
+//   @media (max-width: 900px) {
+//     display: none;
+//   }
+// }
+
+// .playful_btn:hover {
+//   transform: translateY(2px);
+// }
+
+.playful_btn:active {
+  transform: translateY(8px);
+  box-shadow: none;
+}
+
+
+.playful_btn {
+  position: relative;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #fff;
+  border: none;
+  color: black;
+  border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 4px 0px black;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.5s, opacity 0.8s;
+}
+
+.playful_btn:active {
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+
+@keyframes cubeTransformation {
+  0% {
+    transform: scale(1) rotateX(0deg) rotateY(0deg);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.2) rotateX(90deg) rotateY(45deg);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.5) rotateX(180deg) rotateY(90deg);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.2) rotateX(270deg) rotateY(135deg);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.1) rotateX(360deg) rotateY(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0) rotateX(720deg) rotateY(360deg);
+    opacity: 0;
+  }
+}
+
+.transformed {
+  animation: cubeTransformation 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }

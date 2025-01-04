@@ -20,7 +20,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   // padding: 120px;
+  margin-top: 200px;
 }
 
 .footer {
@@ -36,6 +36,14 @@
    border-radius: 40px;
    max-width: 800px;
    width: 100%; 
+   
+    @media (max-width: 600px) {
+      border: none;
+      align-items: center;
+      background-color: #e0e0e0;
+      color: #333333;
+      padding: 30px;
+    }
 
    h1 {
       text-transform: uppercase;
@@ -61,6 +69,7 @@
 }
 
 .real_footer {
+   padding-top: 100px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -88,3 +97,15 @@
    width: 50px;
 
 }
+
+
+
+
+.phone {
+   max-width: 500px;
+      width: 100%;
+}
+
+
+
+ 

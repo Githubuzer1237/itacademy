@@ -39,6 +39,9 @@ const Team = () => {
 
   return (
     <div className={s.teamContainer}>
+      <div className="line"></div>
+      <p>Наша команда</p>
+     
       <div className={s.members}>
         {teamMembers.map((member, index) => (
           <div
@@ -59,6 +62,8 @@ const Team = () => {
           </div>
         ))}
       </div>
+      <div className="line"></div>
+
     </div>
   );
 };
