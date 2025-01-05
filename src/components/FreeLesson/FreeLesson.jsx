@@ -1,95 +1,4 @@
 
-// import React, { useEffect, useState } from "react";
-// import { motion } from "framer-motion";
-// import s from "./FreeLesson.module.scss";
-
-// const generateParticles = (count) =>
-//   Array.from({ length: count }, (_, i) => ({
-//     id: i,
-//     x: Math.random() * window.innerWidth,
-//     y: Math.random() * window.innerHeight,
-//   }));
-
-// const FreeLesson = () => {
-//   const [particles, setParticles] = useState([]);
-//   const [contentVisible, setContentVisible] = useState(false);
-
-//   useEffect(() => {
-//     setParticles(generateParticles(300));
-
-//     const timeout = setTimeout(() => {
-//       setContentVisible(true);
-//     }, 6000); // Время кружения частиц перед сборкой
-
-//     return () => clearTimeout(timeout);
-//   }, []);
-
-//   const scrollToConnectSection = () => {
-//     const section = document.getElementById("zapis");
-//     if (section) {
-//       section.scrollIntoView({ behavior: "smooth" });
-//     }
-//   };
-
-//   return (
-//     <div className={s.wrapper}>
-//       <div className={s.particles}>
-//         {particles.map((particle) => (
-//           <motion.div
-//             key={particle.id}
-//             className={s.particle}
-//             initial={{
-//               x: particle.x,
-//               y: particle.y,
-//               opacity: 1,
-//               scale: 0.5,
-//             }}
-//             animate={{
-//               x: [
-//                 particle.x,
-//                 particle.x + Math.random() * 200 - 100,
-//                 window.innerWidth / 2,
-//               ],
-//               y: [
-//                 particle.y,
-//                 particle.y + Math.random() * 200 - 100,
-//                 window.innerHeight / 2,
-//               ],
-//               rotate: [0, 360, 720], // Кружение
-//               opacity: [1, 0.5, 0],
-//               scale: [0.5, 1, 1],
-//             }}
-//             transition={{
-//               duration: 5,
-//               delay: Math.random() * 1,
-//               ease: "easeInOut",
-//             }}
-//           />
-//         ))}
-//       </div>
-
-//       <motion.div
-//         className={`${s.content} ${contentVisible ? s.visible : ""}`}
-//         initial={{ scale: 0.8, opacity: 0 }}
-//         animate={{
-//           scale: contentVisible ? 1 : 0.8,
-//           opacity: contentVisible ? 1 : 0,
-//         }}
-//         transition={{ duration: 1 }}
-//       >
-//         <h1>Стань программистом будущего!</h1>
-//         <p>
-//           Хочешь изменить свою жизнь? Начни с нашего бесплатного пробного урока
-//           по программированию! Открой новые возможности и стань частью
-//           технологического будущего уже сегодня!
-//         </p>
-//         <button onClick={scrollToConnectSection}>Записаться</button>
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-// export default FreeLesson;
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import s from "./FreeLesson.module.scss";
@@ -99,7 +8,7 @@ const generateParticles = (count) =>
     id: i,
     x: Math.random() * window.innerWidth,
     y: Math.random() * window.innerHeight,
-    isStar: Math.random() < 0.2, // 20% частиц останутся как "звезды"
+    isStar: Math.random() < 0.2, 
   }));
 
 const FreeLesson = () => {
@@ -111,7 +20,7 @@ const FreeLesson = () => {
 
     const timeout = setTimeout(() => {
       setContentVisible(true);
-    }, 5000); // Время кружения частиц перед сборкой
+    }, 5000); 
 
     return () => clearTimeout(timeout);
   }, []);
