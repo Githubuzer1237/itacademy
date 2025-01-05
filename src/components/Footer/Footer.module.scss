@@ -44,6 +44,9 @@
       color: #333333;
       padding: 30px;
     }
+    @media (max-width: 410px) {
+      padding: 10px;
+    }
 
    h1 {
       text-transform: uppercase;

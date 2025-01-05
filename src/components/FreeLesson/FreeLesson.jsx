@@ -31,6 +31,12 @@ const FreeLesson = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const scrollToQuizSection = () => {
+    const section = document.getElementById("quiz");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className={s.wrapper}>
@@ -82,10 +88,14 @@ const FreeLesson = () => {
         <h1>Стань программистом будущего!</h1>
         <p>
           Хочешь изменить свою жизнь? Начни с нашего бесплатного пробного урока
-          по программированию! Открой новые возможности и стань частью
-          технологического будущего уже сегодня!
+          по ЛЮБОМУ направлению! Открой новые возможности и стань частью
+          технологического будущего уже сегодня! <br /> <br /> Не можешь определить какое направление тебе по душе? Мы всегда готовы помочь тебе! Проходи тест ниже что бы определится со своим выбором и сделать шаг в свое светлое будущее!
         </p>
-        <button onClick={scrollToConnectSection}>Записаться</button>
+       <div className={s.btns}> 
+       <button onClick={scrollToConnectSection}>Записаться на урок</button>
+       <button onClick={scrollToQuizSection}>   Узнать свое направление</button>
+       </div>
+
       </motion.div>
     </div>
   );

@@ -1,11 +1,15 @@
 .wrapper {
    position: relative;
-   height: 100vh;
+   height: 100dvh;
    background: linear-gradient(135deg, #0f172a, #1e293b);
    display: flex;
    justify-content: center;
    align-items: center;
    overflow: hidden;
+
+   @media (max-width: 530px) {
+    height: 130dvh;
+   }
  }
  
  .particles {
@@ -140,4 +144,12 @@ button {
   }
 }
  }
- 
+
+
+ .btns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ }
