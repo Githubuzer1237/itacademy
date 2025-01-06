@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import Courses from './pages/Courses';
 import AdminPanel from './pages/AdminPanel';
 import FreeLessonPage from './pages/FreeLessonPage';
+import BranchesPage from './pages/BranchesPage';
 
 const App = () => {
   const location = useLocation();
@@ -44,6 +45,7 @@ const App = () => {
               <Route path="/courses" element={<Courses />} />
               <Route path="/admin-panel" element={<AdminPanel />} />
               <Route path="/freelesson" element={<FreeLessonPage />} />
+              <Route path="/branches" element={<BranchesPage />} />
 
                                                                
             </Routes>

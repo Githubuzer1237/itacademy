@@ -27,6 +27,7 @@ import Partners from '../components/Partners/Partners';
 import WebCourse from '../components/WebCourse/WebCourse';
 import ScratchSection from '../components/ScratchSection/ScratchSection';
 import Grafic from '../components/Grafic/Grafic';
+import Branches from '../components/Branches/Branches';
 
 const Home = () => {
   const defaultPrices = {
@@ -42,7 +43,6 @@ const Home = () => {
     if (storedPrices) {
       setPrices(storedPrices);
     } else {
-      // Если данных нет, сохраняем значение по умолчанию в localStorage
       localStorage.setItem("prices", JSON.stringify(defaultPrices));
     }
   }, []);
@@ -55,6 +55,7 @@ const Home = () => {
       <Grafic price={prices.Grafic} />
       <ScratchSection price={prices.ScratchSection} />
       <Partners />
+      <Branches/>
     </>
   );
 };

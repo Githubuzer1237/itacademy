@@ -7,8 +7,14 @@
    align-items: center;
    overflow: hidden;
 
-   @media (max-width: 530px) {
+   @media (max-width: 750px) {
     height: 130dvh;
+   }
+   @media (max-width: 530px) {
+    height: 150dvh;
+   }
+   @media (max-width: 380px) {
+    height: 160dvh;
    }
  }
  

@@ -88,6 +88,9 @@ const Header = () => {
           <Link onClick={closeBurger} to={'/courses'}>
             Курсы
           </Link>
+          <Link onClick={closeBurger} to={'/branches'}>
+            Филиалы
+          </Link>
           {/* Скрытая ссылка на админку */}
           {showAdminLink && (
             <Link onClick={closeBurger} to={'/admin-panel'}>
