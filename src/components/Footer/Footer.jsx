@@ -141,7 +141,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <footer className={s.real_footer}>
+      {/* <footer className={s.real_footer}>
         <div>
           <Link to={'/'}><img className={s.logo} src="/logo.svg" alt="" /></Link>
           <Link to={'/'}>WORK</Link>
@@ -153,7 +153,7 @@ const Footer = () => {
         <div>
           <p>© 2024 It Academy - Все права защищены</p>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };

@@ -12,6 +12,7 @@ import Courses from './pages/Courses';
 import AdminPanel from './pages/AdminPanel';
 import FreeLessonPage from './pages/FreeLessonPage';
 import BranchesPage from './pages/BranchesPage';
+import RealFooter from './components/RealFooter/RealFooter';
 
 const App = () => {
   const location = useLocation();
@@ -46,10 +47,13 @@ const App = () => {
               <Route path="/admin-panel" element={<AdminPanel />} />
               <Route path="/freelesson" element={<FreeLessonPage />} />
               <Route path="/branches" element={<BranchesPage />} />
+  
 
                                                                
             </Routes>
             <Footer />
+            <RealFooter />
+            
           </motion.div>
         )}
       </AnimatePresence>
