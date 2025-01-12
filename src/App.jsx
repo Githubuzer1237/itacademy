@@ -47,13 +47,11 @@ const App = () => {
               <Route path="/admin-panel" element={<AdminPanel />} />
               <Route path="/freelesson" element={<FreeLessonPage />} />
               <Route path="/branches" element={<BranchesPage />} />
-  
 
                                                                
             </Routes>
             <Footer />
             <RealFooter />
-            
           </motion.div>
         )}
       </AnimatePresence>

@@ -31,7 +31,7 @@ const Branches = () => {
               <div className={s.author}>{item.author}</div>
               <div className={s.title}>{item.title}</div>
               <Link to={item.link} className={s.des}>{item.des}</Link>
-              <Link to={'/studio'}>→ Хочешь увидеть как все выглядит внутри? Тогда нажимай сюда!</Link>
+              <Link to={'/studio'}>→ Хочешь увидеть как все выглядит внутри? <br />Тогда нажимай сюда!</Link>
             </div>
             <div className={s.btns}>
               <button>zapis</button>

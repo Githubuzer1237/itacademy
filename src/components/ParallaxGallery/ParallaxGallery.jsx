@@ -5,7 +5,7 @@ import s from './ParallaxGallery.module.scss';
 const photos = [
   '/it1.png',
   '/it2.png',
-  '/it3.png',
+  '/it5.jpg',
   '/it4.png',
 ];
 

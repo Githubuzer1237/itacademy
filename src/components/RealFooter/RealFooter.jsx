@@ -22,10 +22,10 @@ const RealFooter = () => {
         <img src="/logoacademy.jpg" alt="" className={s.sdct} />
 
         <div className={s.socials}>
-        <Link> <img className={s.social} src='/instagram.svg'  alt="" />  </Link>
-        <Link> <img className={s.social} src='/'  alt="" />    </Link>
-        <Link> <img className={s.social} src='/'  alt="" />    </Link>
-        <Link> <img className={s.social} src='/'  alt="" />   </Link>
+        <Link> <img className={s.social} src='/inst.svg'  alt="" />  </Link>
+        <Link to={'/branches'}  > <img className={s.social2} src='/map.svg'  alt="" />    </Link>
+        {/* <Link> <img className={s.social} src='/'  alt="" />    </Link> */}
+        {/* <Link> <img className={s.social} src='/'  alt="" />   </Link> */}
 
         </div>
 
