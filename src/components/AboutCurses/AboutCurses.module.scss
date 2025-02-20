@@ -1,0 +1,38 @@
+
+.item_title {
+   font-size: 25px;
+   margin-bottom: 15px;
+   color: white;
+    font-family: 'Soyuz Grotesk';
+ 
+  }
+  
+  .item_text  {
+  font-size: 20px;
+  color: #a6a6a6;
+    font-family: 'Soyuz Grotesk';
+ 
+ 
+  }
+
+  .custom_spotlight_card {
+   max-width: 900px;
+   width: 100%;
+
+   @media (max-width: 920px) {
+      max-width: 400px;
+       margin: 0 auto;
+    }
+  }
+
+  .text {
+   display: flex;
+   text-align: center;
+   gap: 20px;
+    @media (max-width: 920px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      
+    }
+  }
